@@ -20,29 +20,16 @@ global $wpdb;
 $WpImporter = new WpImporter();
 class WpImporter
 {
-    protected $con;
-    protected $dbHost ; 
-    protected $dbUser; 
-    protected $dbName; 
 
     public function __construct() {
 
         $this->limit = 5;
-        $this->placeholder_img = 150;// ID of Placeholder
+        $this->placeholder_img = 150;// Images Post ID of Placeholder
         $this->debug_mode = false;
 
-        //$this->test();
         $this->createAPost();
     }
 
-
-    function test(){
-
-        $td_post_theme_settings = get_post_meta('182','td_post_theme_settings');
-        $td_post = get_post_meta('182', 'td_post_audio');
-        echo '<pre>';print_r($td_post);echo '</pre>';
-        //td_post_theme_setting
-    }
 
     
     protected function createAPost(){
