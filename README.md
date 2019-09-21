@@ -30,7 +30,7 @@ This function will crawl a post detail page, and fetch its post title, date, des
 
 # Wp Importer Class
 File: <b>WpImporter.php</b><br>
-![Screenshot](screenshots/Wordpress-Parse-Query.jpg)
+![Screenshot](images/wordpress-importer.png)
 The functions in this class will fetch data stores in our table wp_crawl_listing and create a WordPress post along its meta database, featured image and create and assign category to it.<br>
 
 
